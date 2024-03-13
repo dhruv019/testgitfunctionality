@@ -1,0 +1,2742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>0</Version>
+  <EnvironmentName>esb_config.xml</EnvironmentName>
+  <NeuronBuildVersion>3.8.0.1369</NeuronBuildVersion>
+  <DesignerBuildVersion>3.8.0.1369</DesignerBuildVersion>
+  <ZoneName>Enterprise</ZoneName>
+  <ChangeList>
+    <Additions />
+    <Revisions />
+    <Deletions />
+    <LastModifiedBy />
+    <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+  </ChangeList>
+  <NeuronEnvironmentVariables />
+  <ProcessFolders />
+  <InstanceName>DEFAULT</InstanceName>
+  <Zones>
+    <item>
+      <key>
+        <string>Enterprise</string>
+      </key>
+      <value>
+        <ESBZone>
+          <Id>82c4ed98-8731-495f-b5c6-9b1195b808e3</Id>
+          <Version>2c9f2d0b-714c-40f6-ab74-a84a4fc12011</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Enterprise</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Enabled>true</Enabled>
+          <Channels>
+            <ESBChannelDescription>
+              <Capabilities>
+                <ChannelName>net/msmq</ChannelName>
+                <Properties>
+                  <NameValuePair>
+                    <Name>Recoverable</Name>
+                    <Value>True</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>TransactedPubSub</Name>
+                    <Value>True</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxBatchSize</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>RetryCycleDelay</Name>
+                    <Value>00:10:00</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ReceiveRetryCount</Name>
+                    <Value>3</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ReceiveErrorHandling</Name>
+                    <Value>Fault</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>QueueTransferProtocol</Name>
+                    <Value>Native</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxRetryCycles</Name>
+                    <Value>3</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>DeadLetterQueue</Name>
+                    <Value>System</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Direct</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>CustomDeadLetterQueue</Name>
+                    <Value />
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>UsePublicQueues</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>TimeToLive</Name>
+                    <Value>1440</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentCalls</Name>
+                    <Value>32</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxBufferPoolSize</Name>
+                    <Value>524288</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>LogNoRecipient</Name>
+                    <Value>True</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>AuthenticationMode</Name>
+                    <Value>None</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>EncryptionAlgorithm</Name>
+                    <Value>RC4Stream</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ProtectionLevel</Name>
+                    <Value>None</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SecureHashAlgorithm</Name>
+                    <Value>MD5</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SecurityMode</Name>
+                    <Value>None</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>AlgorithmSuite</Name>
+                    <Value>Default</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MessageCredentialType</Name>
+                    <Value>None</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Certificate</Name>
+                    <Value />
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>DeadLettersEnabled</Name>
+                    <Value>True</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>PoisonMessagesEnabled</Name>
+                    <Value>True</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>OrderedDelivery</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>UsePolicyRetries</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Policy</Name>
+                    <Value />
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>RollbackMessageExpirationSeconds</Name>
+                    <Value>0</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SendTimeout</Name>
+                    <Value>60</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>TransactionTimeout</Name>
+                    <Value>60</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>FailedMessagePath</Name>
+                    <Value />
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentSessions</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentInstances</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                </Properties>
+              </Capabilities>
+              <ChannelName>net/msmq</ChannelName>
+            </ESBChannelDescription>
+            <ESBChannelDescription>
+              <Capabilities>
+                <ChannelName>wcf/tcp</ChannelName>
+                <Properties>
+                  <NameValuePair>
+                    <Name>Reliable</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Ordered</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ClientPortBase</Name>
+                    <Value>61007</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ClientPortRange</Name>
+                    <Value>1000</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ServicePort</Name>
+                    <Value>50010</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>AllowOutputBatching</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Streaming</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Secure</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentCalls</Name>
+                    <Value>2000</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentSessions</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentInstances</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>OpenTimeout</Name>
+                    <Value>60</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SendTimeout</Name>
+                    <Value>60</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>CloseTimeout</Name>
+                    <Value>60</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ListenBacklog</Name>
+                    <Value>128</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConnections</Name>
+                    <Value>500</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxBufferPoolSize</Name>
+                    <Value>524288</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxReceivedMessageSize</Name>
+                    <Value>2147483647</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ClientPoolSize</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>LogNoRecipient</Name>
+                    <Value>True</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>InactivityTimeOut</Name>
+                    <Value>10</Value>
+                  </NameValuePair>
+                </Properties>
+              </Capabilities>
+              <ChannelName>wcf/tcp</ChannelName>
+            </ESBChannelDescription>
+            <ESBChannelDescription>
+              <Capabilities>
+                <ChannelName>wcf/pipe</ChannelName>
+                <Properties>
+                  <NameValuePair>
+                    <Name>AllowOutputBatching</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ClientPoolSize</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>CloseTimeout</Name>
+                    <Value>60</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>LogNoRecipient</Name>
+                    <Value>True</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxBufferPoolSize</Name>
+                    <Value>524288</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentCalls</Name>
+                    <Value>2000</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentSessions</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConcurrentInstances</Name>
+                    <Value>100</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxConnections</Name>
+                    <Value>500</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxReceivedMessageSize</Name>
+                    <Value>2147483647</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>OpenTimeout</Name>
+                    <Value>60</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Secure</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SendTimeout</Name>
+                    <Value>60</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Streaming</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                </Properties>
+              </Capabilities>
+              <ChannelName>wcf/pipe</ChannelName>
+            </ESBChannelDescription>
+            <ESBChannelDescription>
+              <Capabilities>
+                <ChannelName>amqp/rabbitmq</ChannelName>
+                <Properties>
+                  <NameValuePair>
+                    <Name>PoisonMessageEnabled</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>RetryCycleDelay</Name>
+                    <Value>00:01:00</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MaxRetryCycles</Name>
+                    <Value>3</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>DetectDuplicates</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>DetectDuplicatesWindow</Name>
+                    <Value>5</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ReportDuplicates</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>TransactionType</Name>
+                    <Value>None</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>DeliveryMode</Name>
+                    <Value>Persistent</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ResubmitUnAcks</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>TimeToLive</Name>
+                    <Value>1440</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>PreFetchBatchSize</Name>
+                    <Value>20</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>NumberOfThreads</Name>
+                    <Value>2</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>BatchSizeConfirms</Name>
+                    <Value>50</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Inactivity</Name>
+                    <Value>1</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ConfirmTimeOut</Name>
+                    <Value>10</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>Mandatory</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SSLEnabled</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SSLPort</Name>
+                    <Value>5671</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SSLProtocol</Name>
+                    <Value>None</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SSLClientAuth</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SSLCertificate</Name>
+                    <Value />
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>SSLPassphrase</Name>
+                    <Value />
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>MultiThreadReceive</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>QuorumQueues</Name>
+                    <Value>False</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>QueueMode</Name>
+                    <Value>Default</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>ShutdownEvent</Name>
+                    <Value>ReQueue</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>PoisonMessageHandlerType</Name>
+                    <Value>Blocking</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>DeliveryLimit</Name>
+                    <Value>0</Value>
+                  </NameValuePair>
+                  <NameValuePair>
+                    <Name>QuorumInitialSize</Name>
+                    <Value>3</Value>
+                  </NameValuePair>
+                </Properties>
+              </Capabilities>
+              <ChannelName>amqp/rabbitmq</ChannelName>
+            </ESBChannelDescription>
+          </Channels>
+          <BootstrapServicePort>50000</BootstrapServicePort>
+          <ManagementServicePort>50002</ManagementServicePort>
+          <ControlServicePort>50004</ControlServicePort>
+          <CacheServiceBasePort>50200</CacheServiceBasePort>
+          <EndpointHostServicePort>51004</EndpointHostServicePort>
+          <SwaggerSelfHostBasePort>51003</SwaggerSelfHostBasePort>
+          <TcpPublishingStartPort>50010</TcpPublishingStartPort>
+          <TcpPublishingEndPort>50100</TcpPublishingEndPort>
+          <Clustered>false</Clustered>
+          <QueueServer>desktop-hr5rfgs</QueueServer>
+          <ActiveDeploymentGroup>desktop-hr5rfgs</ActiveDeploymentGroup>
+          <ClientPollingIntervalSec>15</ClientPollingIntervalSec>
+          <ClientReportingExpirationIntervalSec>60</ClientReportingExpirationIntervalSec>
+          <ServicePollingIntervalSec>15</ServicePollingIntervalSec>
+          <TCPPubSubClientBasePort>61000</TCPPubSubClientBasePort>
+          <TCPPubSubClientPortRange>1000</TCPPubSubClientPortRange>
+          <WorkflowQueueMaxCount>100</WorkflowQueueMaxCount>
+          <EnableWMIClientCounters>true</EnableWMIClientCounters>
+          <EnableWMINeuronEndpointCounters>true</EnableWMINeuronEndpointCounters>
+          <BindingSettings>
+            <ListenBacklog>128</ListenBacklog>
+          </BindingSettings>
+          <ZoneName>Enterprise</ZoneName>
+          <EnablePortSharing>false</EnablePortSharing>
+        </ESBZone>
+      </value>
+    </item>
+  </Zones>
+  <Topics />
+  <Subscribers />
+  <Services>
+    <item>
+      <key>
+        <string>Enterprise/Service1</string>
+      </key>
+      <value>
+        <ESBService>
+          <Id>93ec0160-83e4-46b1-a7cd-4fd6d134db3d</Id>
+          <Version>ee6843b2-194a-4feb-b4d3-0a0c2c9f1be9</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Service1</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Bindings />
+          <Topic />
+          <Pattern>1</Pattern>
+          <Properties />
+          <MessagingPattern>Request-Reply</MessagingPattern>
+          <ProxySettings>
+            <HostConfigType>Default</HostConfigType>
+            <CredentialConfigType>NotSpecified</CredentialConfigType>
+            <Credential>&lt;Default&gt;</Credential>
+            <Host />
+            <Port>0</Port>
+            <BypassLocalAddress>false</BypassLocalAddress>
+          </ProxySettings>
+          <DebugInfo />
+          <Zone>Enterprise</Zone>
+          <Enabled>true</Enabled>
+          <ServiceName>Service1</ServiceName>
+          <ServiceGroup>General</ServiceGroup>
+          <Binding>REST</Binding>
+          <AvailabilityGroupId />
+          <Behavior />
+          <KeepAlive>true</KeepAlive>
+          <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+          <ProcessMultipartMessages>false</ProcessMultipartMessages>
+          <TransactionType>None</TransactionType>
+          <MaxMessageSize>1000000</MaxMessageSize>
+          <ReliableMessaging>false</ReliableMessaging>
+          <ConfigFile />
+          <InboundPolling>false</InboundPolling>
+          <OptimizeForLargeMessages>false</OptimizeForLargeMessages>
+          <RawBody>false</RawBody>
+          <ServiceThrottles>
+            <MaxConcurrentCalls>208</MaxConcurrentCalls>
+            <MaxConcurrentInstances>100</MaxConcurrentInstances>
+            <MaxConcurrentSessions>100</MaxConcurrentSessions>
+          </ServiceThrottles>
+          <CertificateValidationMode>None</CertificateValidationMode>
+          <CertificateRevocationMode>NoCheck</CertificateRevocationMode>
+          <NegotiateServiceCredential>true</NegotiateServiceCredential>
+          <EstablishSecurityContext>true</EstablishSecurityContext>
+          <Contract />
+          <Security>Transport:None</Security>
+          <ServiceIdentityType>None</ServiceIdentityType>
+          <ServicePrincipal />
+          <ServiceType>Business</ServiceType>
+          <ClientCredentialtype>Certificate</ClientCredentialtype>
+          <Impersonation>false</Impersonation>
+          <RelayAccessToken>true</RelayAccessToken>
+          <ClientConnectorId>c414d66d-5b9a-4f75-8911-125983251a28</ClientConnectorId>
+          <ClientUrl />
+          <RouteClientTraffic>false</RouteClientTraffic>
+          <ClientTopic />
+          <UpdateMetadata>true</UpdateMetadata>
+          <UseHttps>false</UseHttps>
+          <EnableClientMetadataHttpEndpoint>false</EnableClientMetadataHttpEndpoint>
+          <EnableClientMetadataHttpsEndpoint>false</EnableClientMetadataHttpsEndpoint>
+          <ClientSubscriberId />
+          <CaptureHeaders>true</CaptureHeaders>
+          <CaptureHTTPHeaders>false</CaptureHTTPHeaders>
+          <HttpConnectionLimit>100</HttpConnectionLimit>
+          <EnableCors>false</EnableCors>
+          <ClientCertName />
+          <ACL />
+          <AccessUrl>https://petstore.swagger.io/</AccessUrl>
+          <RouteServiceTraffic>true</RouteServiceTraffic>
+          <RestoreHeaders>false</RestoreHeaders>
+          <RestoreHTTPHeaders>true</RestoreHTTPHeaders>
+          <ServiceSubscriberId />
+          <ReuseServiceConnection>true</ReuseServiceConnection>
+          <ServerCertName />
+          <ServicePolicy>Default</ServicePolicy>
+          <FailoverAddresses />
+          <FarmSingleInstance>false</FarmSingleInstance>
+          <ProcessList />
+          <ProcessMode>Messaging</ProcessMode>
+          <ServiceRoutes />
+          <ServiceProcessMode>true</ServiceProcessMode>
+          <ServiceServiceRateEnable>false</ServiceServiceRateEnable>
+          <ClientServiceRateEnable>false</ClientServiceRateEnable>
+        </ESBService>
+      </value>
+    </item>
+  </Services>
+  <WorkflowDefinitions />
+  <WorkflowHosts />
+  <AvailabilityGroups>
+    <item>
+      <key>
+        <string>Neuron ESB Default Host</string>
+      </key>
+      <value>
+        <EsbAvailabilityGroup>
+          <Id>2bee4eda-b0b3-4aaa-9414-7ea842bae4f9</Id>
+          <Version>0c5a7de3-3592-45ce-9989-ffebb5570d49</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description>Neuron ESB Default Host for Endpoints</Description>
+          <Name>Neuron ESB Default Host</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <IsScheduler>false</IsScheduler>
+          <Category />
+          <RunAs />
+          <IsEnabled>true</IsEnabled>
+          <DeploymentGroups>
+            <EsbAvailabilityGroupDeploymentGroupMapping>
+              <DeploymentGroup>desktop-hr5rfgs</DeploymentGroup>
+              <Servers>
+                <DeploymentServer>
+                  <ServerName>desktop-hr5rfgs</ServerName>
+                  <Role>Primary</Role>
+                  <RetryCount>2</RetryCount>
+                  <RetryInterval>5</RetryInterval>
+                  <IsEnabled>true</IsEnabled>
+                  <AllocatedCores>0</AllocatedCores>
+                  <AllocatedMemory>0</AllocatedMemory>
+                </DeploymentServer>
+              </Servers>
+            </EsbAvailabilityGroupDeploymentGroupMapping>
+          </DeploymentGroups>
+        </EsbAvailabilityGroup>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Peregrine Scheduler</string>
+      </key>
+      <value>
+        <EsbAvailabilityGroup>
+          <Id>a85dc0c7-d8ae-42f4-92aa-ab3c3b13261b</Id>
+          <Version>8e0a0dae-83ea-4ade-989a-2fcb0b99a14d</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description>Peregrine Scheduler</Description>
+          <Name>Peregrine Scheduler</Name>
+          <IsSystemObject>true</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <IsScheduler>true</IsScheduler>
+          <Category />
+          <RunAs />
+          <IsEnabled>true</IsEnabled>
+          <DeploymentGroups>
+            <EsbAvailabilityGroupDeploymentGroupMapping>
+              <DeploymentGroup>desktop-hr5rfgs</DeploymentGroup>
+              <Servers>
+                <DeploymentServer>
+                  <ServerName>desktop-hr5rfgs</ServerName>
+                  <Role>Primary</Role>
+                  <RetryCount>2</RetryCount>
+                  <RetryInterval>5</RetryInterval>
+                  <IsEnabled>true</IsEnabled>
+                  <AllocatedCores>0</AllocatedCores>
+                  <AllocatedMemory>0</AllocatedMemory>
+                </DeploymentServer>
+              </Servers>
+            </EsbAvailabilityGroupDeploymentGroupMapping>
+          </DeploymentGroups>
+        </EsbAvailabilityGroup>
+      </value>
+    </item>
+  </AvailabilityGroups>
+  <OAuthProviders />
+  <ESBMessagePipelines>
+    <item>
+      <key>
+        <string>e59e6211-ff6e-45a8-9663-25ce0a0b2f17</string>
+      </key>
+      <value>
+        <ESBMessagePipelineStorage>
+          <Id>e59e6211-ff6e-45a8-9663-25ce0a0b2f17</Id>
+          <Version>8a8c466b-fcfc-4538-9f5c-628cc4038c2f</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>ServiceEndpoint</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Category>General</Category>
+          <IsEncrypted>true</IsEncrypted>
+          <Path />
+          <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d2p1:KeyValueOfstringanyType&gt;&lt;d2p1:Key&gt;NeuronMessageSourceID&lt;/d2p1:Key&gt;&lt;d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string" /&gt;&lt;/d2p1:KeyValueOfstringanyType&gt;&lt;d2p1:KeyValueOfstringanyType&gt;&lt;d2p1:Key&gt;NeuronProcess&lt;/d2p1:Key&gt;&lt;d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"&gt;New Process 1&lt;/d2p1:Value&gt;&lt;/d2p1:KeyValueOfstringanyType&gt;&lt;/GlobalProperties&gt;&lt;Name&gt;ServiceEndpoint&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep i:type="RestPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;0e477c78-aff0-4e89-a102-3ad7cda3b7ab&lt;/Id&gt;&lt;Name&gt;Http Client Utility&lt;/Name&gt;&lt;Uniquename /&gt;&lt;SerializableCurrentRestRequest&gt;&amp;lt;?xml version="1.0" encoding="utf-16"?&amp;gt;&amp;lt;RestRequest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&amp;gt;&amp;lt;Method&amp;gt;GET&amp;lt;/Method&amp;gt;&amp;lt;URI&amp;gt;v2/pet/1&amp;lt;/URI&amp;gt;&amp;lt;Body /&amp;gt;&amp;lt;BodyType&amp;gt;Raw&amp;lt;/BodyType&amp;gt;&amp;lt;BodyFormat&amp;gt;XML&amp;lt;/BodyFormat&amp;gt;&amp;lt;DeleteMessageBody&amp;gt;true&amp;lt;/DeleteMessageBody&amp;gt;&amp;lt;DeleteResponseBody&amp;gt;false&amp;lt;/DeleteResponseBody&amp;gt;&amp;lt;Parameters /&amp;gt;&amp;lt;Headers&amp;gt;&amp;lt;HeaderDataElement&amp;gt;&amp;lt;Key&amp;gt;Accept&amp;lt;/Key&amp;gt;&amp;lt;Value&amp;gt;application/json&amp;lt;/Value&amp;gt;&amp;lt;/HeaderDataElement&amp;gt;&amp;lt;/Headers&amp;gt;&amp;lt;AdapterEndpointProperties /&amp;gt;&amp;lt;BodyProperties /&amp;gt;&amp;lt;TestEnabled&amp;gt;FALSE&amp;lt;/TestEnabled&amp;gt;&amp;lt;TestFormat&amp;gt;TEXT&amp;lt;/TestFormat&amp;gt;&amp;lt;MaxPoolSize&amp;gt;1&amp;lt;/MaxPoolSize&amp;gt;&amp;lt;PoolTimeOut&amp;gt;1000&amp;lt;/PoolTimeOut&amp;gt;&amp;lt;AuditRequest&amp;gt;false&amp;lt;/AuditRequest&amp;gt;&amp;lt;AuditResponses&amp;gt;false&amp;lt;/AuditResponses&amp;gt;&amp;lt;AuditFailures&amp;gt;false&amp;lt;/AuditFailures&amp;gt;&amp;lt;/RestRequest&amp;gt;&lt;/SerializableCurrentRestRequest&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageServiceEndpointPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;403ddac7-6830-4b78-b790-b51aee2cb1c6&lt;/Id&gt;&lt;Name&gt;Service Endpoint&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d3p1:Category&gt;General&lt;/d3p1:Category&gt;&lt;d3p1:Description /&gt;&lt;d3p1:MaxServiceInstances&gt;100&lt;/d3p1:MaxServiceInstances&gt;&lt;d3p1:MessagePattern&gt;Request-Reply&lt;/d3p1:MessagePattern&gt;&lt;d3p1:Policy&gt;Default&lt;/d3p1:Policy&gt;&lt;d3p1:ServiceBinding&gt;REST&lt;/d3p1:ServiceBinding&gt;&lt;d3p1:ServiceConnector&gt;Service1&lt;/d3p1:ServiceConnector&gt;&lt;d3p1:ServiceId&gt;93ec0160-83e4-46b1-a7cd-4fd6d134db3d&lt;/d3p1:ServiceId&gt;&lt;d3p1:ServicePoolTimeout&gt;PT1M&lt;/d3p1:ServicePoolTimeout&gt;&lt;d3p1:ServiceUrl&gt;https://petstore.swagger.io/&lt;/d3p1:ServiceUrl&gt;&lt;d3p1:ThrowExceptionOnFault&gt;false&lt;/d3p1:ThrowExceptionOnFault&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageTraceMessagePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;fd20ccaf-302d-4e79-b4f7-8adfc7272dea&lt;/Id&gt;&lt;Name&gt;Trace&lt;/Name&gt;&lt;Uniquename /&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+          <IsProcessFlow>false</IsProcessFlow>
+        </ESBMessagePipelineStorage>
+      </value>
+    </item>
+  </ESBMessagePipelines>
+  <Schemas />
+  <JsonSchemas />
+  <XmlDocs />
+  <TextDocs />
+  <JsonDocs />
+  <SwaggerDocs />
+  <WsdlDocuments />
+  <Xslts />
+  <DataMappers />
+  <BusinessEvents />
+  <Deployments>
+    <item>
+      <key>
+        <string>desktop-hr5rfgs</string>
+      </key>
+      <value>
+        <ESBDeployment>
+          <Id>9eb6f7db-6cc3-4b43-bff4-0f53abdc502a</Id>
+          <Version>99592344-ee50-456e-9a1d-1498b5b3f984</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description>Run everything on local machine</Description>
+          <Name>desktop-hr5rfgs</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <NeuronEnvironmentVariables />
+          <RunInDocker>false</RunInDocker>
+          <WindowsVersion>Server2019</WindowsVersion>
+          <DockerSettings>
+            <BootstrapServicePort>50000</BootstrapServicePort>
+            <ManagementServicePort>50002</ManagementServicePort>
+            <ControlServicePort>50004</ControlServicePort>
+            <CacheServiceBasePort>50200</CacheServiceBasePort>
+            <EndpointHostServicePort>51004</EndpointHostServicePort>
+            <SwaggerSelfHostBasePort>51003</SwaggerSelfHostBasePort>
+            <TcpPublishingStartPort>50010</TcpPublishingStartPort>
+            <TcpPublishingEndPort>50100</TcpPublishingEndPort>
+            <AllocatedMemory>0</AllocatedMemory>
+            <AllocatedCores>0</AllocatedCores>
+            <DockerHosts />
+            <EnablePortSharing>false</EnablePortSharing>
+            <Administrators />
+            <Users />
+            <UseGmsa>false</UseGmsa>
+            <GmsaAccount>LocalService</GmsaAccount>
+            <SwarmDeployment>false</SwarmDeployment>
+          </DockerSettings>
+          <DockerEnvironmentConfig>
+            <esbInstanceName>Default</esbInstanceName>
+            <esbEnvironment />
+            <esbZone>Enterprise</esbZone>
+            <esbDeploymentGroup />
+            <overrideDotNetThreadPoolSize>false</overrideDotNetThreadPoolSize>
+            <dotNetMaxWorkerThreads>1000</dotNetMaxWorkerThreads>
+            <dotNetMaxIOThreads>1000</dotNetMaxIOThreads>
+            <dotNetMinWorkerThreads>200</dotNetMinWorkerThreads>
+            <dotNetMinIOThreads>200</dotNetMinIOThreads>
+            <ClientSettingsProviderServiceUri />
+            <MaximumLogFileSize>104857600</MaximumLogFileSize>
+            <MinimumDiskSpaceThreshold>10485760</MinimumDiskSpaceThreshold>
+            <LogFileSchedule>Daily</LogFileSchedule>
+            <StartupTimeoutTicks>6000000000</StartupTimeoutTicks>
+            <ConfigurationReloadDelayTicks>600000000</ConfigurationReloadDelayTicks>
+            <WSDiscoveryEnabled>true</WSDiscoveryEnabled>
+            <WSDiscoveryBroadcast>true</WSDiscoveryBroadcast>
+            <WSDiscoveryAnnouncementIntervalTicks>100000000</WSDiscoveryAnnouncementIntervalTicks>
+            <WSDiscoveryApplicationScope>default</WSDiscoveryApplicationScope>
+            <DiscoveryTCPPort>51001</DiscoveryTCPPort>
+            <DiscoveryRESTPort>51002</DiscoveryRESTPort>
+            <DiscoverySwaggerPort>51003</DiscoverySwaggerPort>
+            <NeuronEndpointHostPort>51004</NeuronEndpointHostPort>
+            <NeuronEventProcessorPort>51005</NeuronEventProcessorPort>
+            <NeuronEventProcessorMachine>localhost</NeuronEventProcessorMachine>
+            <DefaultHttpConnectionLimit>100</DefaultHttpConnectionLimit>
+            <ClusterNetworkName />
+            <MaxHeartbeatFailures>2</MaxHeartbeatFailures>
+            <NeuronHybridFeaturesEnabled>false</NeuronHybridFeaturesEnabled>
+            <LoggingPollIntervalInSeconds>5</LoggingPollIntervalInSeconds>
+            <MicrosoftServiceBusConnectionString>Endpoint=sb://[your namespace].servicebus.windows.net;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=[your secret]</MicrosoftServiceBusConnectionString>
+            <EsbUseMachineEnvironmentVars>false</EsbUseMachineEnvironmentVars>
+            <XsltFilesLocation />
+            <XsdFilesLocation />
+            <LogPattern>%date{yyyy-MM-dd HH:mm:ss.fffzzz} [%thread] %-5level - %message%newline%exception</LogPattern>
+            <LogFolderCleanupSchedule>10</LogFolderCleanupSchedule>
+            <SavedHistoryCleanupSchedule>0</SavedHistoryCleanupSchedule>
+            <NeuronHybridManagementSuiteHost>localhost</NeuronHybridManagementSuiteHost>
+            <NeuronServiceWCFTracingEnabled>false</NeuronServiceWCFTracingEnabled>
+            <TempDirectory />
+            <DisableGlobalExceptionHandler>true</DisableGlobalExceptionHandler>
+            <NeuronServiceRateFlushInterval>5</NeuronServiceRateFlushInterval>
+            <NeuronServiceRateCacheSize>10000</NeuronServiceRateCacheSize>
+            <NeuronEventConsumerLevel>1</NeuronEventConsumerLevel>
+            <NeuronEventTimeToLive>1440</NeuronEventTimeToLive>
+            <NeuronEventPoolSizeInit>0</NeuronEventPoolSizeInit>
+            <NeuronEventPoolSizeMax>200</NeuronEventPoolSizeMax>
+            <LicenseKey />
+            <SwaggerSelfHostingUrl />
+            <SchedulerRemotingPort>49153</SchedulerRemotingPort>
+            <SchedulerEnableLogging>false</SchedulerEnableLogging>
+            <MSAppPoolServiceAccount>NT AUTHORITY\NETWORK SERVICE</MSAppPoolServiceAccount>
+            <IsDirty>false</IsDirty>
+          </DockerEnvironmentConfig>
+          <AmqpConnectionList>
+            <AmqpConnectionProperties>
+              <Server>localhost</Server>
+              <Port>-1</Port>
+              <HealthPort>15672</HealthPort>
+              <VHost>/</VHost>
+              <Username>yBhwAya8PC32CdI39OB2Kg==</Username>
+              <Password>yBhwAya8PC32CdI39OB2Kg==</Password>
+            </AmqpConnectionProperties>
+          </AmqpConnectionList>
+          <SharedNat>true</SharedNat>
+          <AmqpPort>0</AmqpPort>
+          <AmqpManagementPort>0</AmqpManagementPort>
+          <Zone>Enterprise</Zone>
+          <Enabled>true</Enabled>
+          <Active>true</Active>
+          <DevelopmentDefault>false</DevelopmentDefault>
+          <EncryptUnicode>true</EncryptUnicode>
+          <ServerTopology>0</ServerTopology>
+          <Units>
+            <ESBDeploymentUnit>
+              <MachineName>desktop-hr5rfgs</MachineName>
+              <IsESBServer>true</IsESBServer>
+              <IsQueueServer>true</IsQueueServer>
+            </ESBDeploymentUnit>
+          </Units>
+        </ESBDeployment>
+      </value>
+    </item>
+  </Deployments>
+  <MessagePatterns />
+  <Bridges />
+  <Databases />
+  <Keys />
+  <Workflows />
+  <Applications />
+  <BusinessFlows />
+  <ProcessFlows />
+  <Bindings />
+  <ServiceRoutingTables />
+  <Behaviors />
+  <Adapters>
+    <item>
+      <key>
+        <string>Microsoft Active Directory</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>8038e32e-3968-4947-9a3a-529cfaeadfa7</Id>
+          <Version>4c3ac2a6-c6cb-494b-b9dc-6d2c993d5be8</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Active Directory</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.ActiveDirectoryAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.ActiveDirectoryAdapter</BindingClass>
+          <AdapterName>Microsoft Active Directory</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Apache ActiveMQ</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>c62493bc-93e9-4fc7-9082-207e53a8146d</Id>
+          <Version>a44581e2-175d-4a2b-ac3a-c03cdb7d140c</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Apache ActiveMQ</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.ActiveMqAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.ActiveMqAdapter</BindingClass>
+          <AdapterName>Apache ActiveMQ</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>AlphaTrust</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>d8d8a1d1-e029-4721-ae9e-63e716ffd690</Id>
+          <Version>8aa34fe2-f506-46be-921f-818f0dc21695</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>AlphaTrust</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AlphaTrustAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AlphaTrustAdapter</BindingClass>
+          <AdapterName>AlphaTrust</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon S3</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>82c33d03-a5e6-47ce-a069-9757f6ac8e87</Id>
+          <Version>21b09f08-1082-4c7f-9d59-c3de8a8707cb</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon S3</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AmazonS3Adapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AmazonS3Adapter</BindingClass>
+          <AdapterName>Amazon S3</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon WorkDocs</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>2a19a717-c5ea-4a43-b805-3bc39ab24d75</Id>
+          <Version>66aedce6-b8d8-4706-b277-653e74a31fd1</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon WorkDocs</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AmazonWorkDocsAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AmazonWorkdocsAdapter</BindingClass>
+          <AdapterName>Amazon WorkDocs</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Apple Push Notification Service</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>65010552-3449-41c7-9163-8e97da8357ac</Id>
+          <Version>4e4a4740-e4e0-48fa-acfe-b294c28246c1</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Apple Push Notification Service</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.ApplePushNotificationService.dll</BindingAssembly>
+          <BindingClass>NeuronEsb.Adapters.ApplePushNotificationService.ApplePushNotificationServiceAdapter</BindingClass>
+          <AdapterName>Apple Push Notification Service</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon SQS</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>0a91063c-e5d3-4d8c-84e4-1a3dbc463222</Id>
+          <Version>68976e02-fa84-4161-b5e8-1374c85b94e8</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon SQS</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AwsSqsAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AwsSqs.SimpleQueueServiceAdapter</BindingClass>
+          <AdapterName>Amazon SQS</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Blob Storage</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>68cb7a24-9a0c-4ae0-91e8-cf55ac7d234e</Id>
+          <Version>b2bad26d-8993-45b7-9d21-eb05582c2c9e</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Blob Storage</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AzureBlobStorageAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureBlobStorageAdapter</BindingClass>
+          <AdapterName>Azure Blob Storage</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Data Lake</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>a6f1723e-9f01-4f58-ba51-29b4ac219768</Id>
+          <Version>825a965c-848d-47bc-90cd-39d728971949</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Data Lake</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AzureDataLakeStorageAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureDataLakeStorageAdapter</BindingClass>
+          <AdapterName>Azure Data Lake</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure File Storage</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>e77b501f-9ac0-40ab-b9a5-5677a5c48156</Id>
+          <Version>0ade537e-b878-4f46-b7ee-4c09c7ee127f</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure File Storage</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AzureFileStorageAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureFileStorageAdapter</BindingClass>
+          <AdapterName>Azure File Storage</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Queue Storage</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>5b2df52a-1b3c-425b-8c84-b9e126bc4fdf</Id>
+          <Version>35187baa-7bd3-43eb-8a24-f76d3dbf8030</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Queue Storage</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AzureQueueStorageAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureQueueStorageAdapter</BindingClass>
+          <AdapterName>Azure Queue Storage</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Service Bus</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>9ffe7764-0023-4c32-8de1-ccc032aa559b</Id>
+          <Version>87de9b4f-9fc4-4872-9ce2-fd632610b364</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Service Bus</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.AzureServiceBusAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.BrokeredMessagingAdapter</BindingClass>
+          <AdapterName>Azure Service Bus</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Box</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>6c63d67b-9259-409c-b689-10c97bcae81e</Id>
+          <Version>a9105b04-aceb-42bf-a0a2-07302c1e1239</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Box</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.BoxAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.BoxAdapter</BindingClass>
+          <AdapterName>Box</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Apache Cassandra</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>b32f25af-ae87-498e-97f3-21f30df96b83</Id>
+          <Version>943c972c-75f8-45c4-ac07-9ec7cf54698b</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Apache Cassandra</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.CassandraAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.CassandraAdapter</BindingClass>
+          <AdapterName>Apache Cassandra</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Citrix ShareFile</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>1bf11330-a497-400f-9531-581c1549b7b1</Id>
+          <Version>9dd2fac3-bd8e-4369-9e64-951640f426a4</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Citrix ShareFile</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.CitrixShareFileAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.ShareFileAdapter</BindingClass>
+          <AdapterName>Citrix ShareFile</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Couchbase</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>3fe4d369-344a-43cb-a2d9-70306fddf990</Id>
+          <Version>57cecd76-2187-4b12-8f6e-ae62be79c758</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Couchbase</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.CouchbaseAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.CouchbaseAdapter</BindingClass>
+          <AdapterName>Couchbase</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics CRM XRM</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>47bfb310-941e-493b-84f6-0299fd061c95</Id>
+          <Version>c46b4f88-1360-4399-927e-4b180654d57a</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics CRM XRM</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.Crm2013Adapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.Crm2013Adapter</BindingClass>
+          <AdapterName>Microsoft Dynamics CRM XRM</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IBM DB2</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>ec54115e-03fa-4e29-8a59-410f04b0c796</Id>
+          <Version>aeedebca-9983-4762-8def-088df3c1250b</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>IBM DB2</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DB2Adapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.DB2Adapter</BindingClass>
+          <AdapterName>IBM DB2</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Dropbox</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>4c05d0ad-1b64-432a-b7e6-0ea3449b9aed</Id>
+          <Version>b70d5fc0-49fb-408f-9dbc-b069c3729e69</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Dropbox</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DropboxAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.DropboxAdapter</BindingClass>
+          <AdapterName>Dropbox</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics 365 Business Central</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>7ae59a56-3c16-4591-bda2-80e7ffc65f4c</Id>
+          <Version>ccd365e4-6d63-4dc9-9d42-4effc2cd6c7e</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics 365 Business Central</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.Dynamics365BusinessCentralAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.Dynamics365BusinessCentralAdapter</BindingClass>
+          <AdapterName>Microsoft Dynamics 365 Business Central</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics AX</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>e59fdb0e-1532-464b-b1a6-bace4205fa1a</Id>
+          <Version>272e3a26-a7bd-4ed2-8f33-3b5ef6db9e50</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics AX</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DynamicsAxAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.DynamicsAxAdapter</BindingClass>
+          <AdapterName>Microsoft Dynamics AX</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dataverse</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>cd5ceabd-3e0f-4dad-b520-c3978eeff768</Id>
+          <Version>939ab257-6e96-4f15-b53b-5f3a0b5c77c2</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dataverse</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DynamicsCrmWebApiAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.DataverseAdapter</BindingClass>
+          <AdapterName>Microsoft Dataverse</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics 365 Field Service</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>4b8d6edb-a87c-44d5-a450-f39f5026c0f9</Id>
+          <Version>9d78438e-6b53-4c67-851f-bca1401b410c</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics 365 Field Service</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DynamicsCrmWebApiAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.Dynamics365FieldServiceAdapter</BindingClass>
+          <AdapterName>Microsoft Dynamics 365 Field Service</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics 365 Marketing</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>b8387725-283e-4103-bdfb-788681998115</Id>
+          <Version>c109c23c-04f2-4c30-87b5-f9ddc1b36a46</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics 365 Marketing</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DynamicsCrmWebApiAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.Dynamics365MarketingAdapter</BindingClass>
+          <AdapterName>Microsoft Dynamics 365 Marketing</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics 365 Customer Service</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>281acb5b-6018-4626-95cf-677791989ecf</Id>
+          <Version>d94abae3-064b-4852-9abe-590b0d56efec</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics 365 Customer Service</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DynamicsCrmWebApiAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.Dynamics365CustomerServiceAdapter</BindingClass>
+          <AdapterName>Microsoft Dynamics 365 Customer Service</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics 365 Sales</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>4bb1b351-bd66-4b6e-a6e9-89c5be3d607e</Id>
+          <Version>ab580699-8876-474a-b587-32f6aeb07617</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics 365 Sales</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DynamicsCrmWebApiAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.Dynamics365SalesAdapter</BindingClass>
+          <AdapterName>Microsoft Dynamics 365 Sales</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics CRM Web API</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>61f53ef4-ce39-4973-9407-fb1566e51efe</Id>
+          <Version>b0b7b4bf-4e6a-4029-8c1e-e97fa808974f</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics CRM Web API</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DynamicsCrmWebApiAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.DynamicsCrmWebApiAdapter</BindingClass>
+          <AdapterName>Microsoft Dynamics CRM Web API</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon DynamoDB</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>b86a53fc-4887-4a4d-a678-a50d49443b18</Id>
+          <Version>33df94ff-7ac7-43c8-a678-ab0649d92ebe</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon DynamoDB</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.DynamoDBAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.DynamoDBAdapter</BindingClass>
+          <AdapterName>Amazon DynamoDB</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Dynamics GP</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>984447ce-87e0-48c6-b157-5ab9c04d04d5</Id>
+          <Version>6da793a4-dc63-475d-80ac-36f888e5a6cd</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Dynamics GP</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.EConnectAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.EConnectAdapter</BindingClass>
+          <AdapterName>Microsoft Dynamics GP</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>File</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>21bf6286-c423-4321-868c-9d7c63efb261</Id>
+          <Version>eb7bd63c-fa76-4af6-b3f7-88d343857ac4</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>File</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.FileAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.FileAdapter</BindingClass>
+          <AdapterName>File</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>FTP/FTPS</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>c01e90b8-644d-40a6-9b3a-507d3d313c04</Id>
+          <Version>3f9c8755-62cb-4929-be8e-66a70d72ae6e</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>FTP/FTPS</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.FtpAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.FtpAdapter</BindingClass>
+          <AdapterName>FTP/FTPS</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Google Drive</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>c0d02020-0077-43a3-be49-2a8ba2bdd18b</Id>
+          <Version>309817cc-6b1f-4a17-a48e-b34cf13c96a2</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Google Drive</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.GoogleDriveAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.GoogleDriveAdapter</BindingClass>
+          <AdapterName>Google Drive</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>HubSpot</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>01c26bde-415d-45c6-aca2-8e324318fdb5</Id>
+          <Version>6d01d1b1-0de2-402e-9a2e-9bb645c6bcb7</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>HubSpot</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.HubSpotAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.HubSpotAdapter</BindingClass>
+          <AdapterName>HubSpot</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Informix</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>b838c3e6-324a-4846-b04d-2c6be4c4c23b</Id>
+          <Version>67c1f62c-0a57-4340-a695-61a8c7cf1842</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Informix</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.InformixAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.INFORMIXAdapter</BindingClass>
+          <AdapterName>Informix</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Kafka</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>cc7e955a-3f63-47d3-a891-79ca6802b9d1</Id>
+          <Version>26a0cf86-2e0c-426a-90e2-eef7381f813a</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Kafka</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.KafkaAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.KafkaAdapter</BindingClass>
+          <AdapterName>Kafka</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon RDS for MariaDB</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>86a9909e-80dc-4f1d-a036-48f50804add7</Id>
+          <Version>81342778-c162-4d92-a461-ae13313ae2f2</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon RDS for MariaDB</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MariaDBAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AmazonRDSForMariaDBAdapter</BindingClass>
+          <AdapterName>Amazon RDS for MariaDB</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MariaDB</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>cc3f6963-84ca-4fb0-b674-231884fcc39b</Id>
+          <Version>bc0e004d-9f33-4e6c-9b15-1ab7ffab3ccb</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>MariaDB</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MariaDBAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MariaDBAdapter</BindingClass>
+          <AdapterName>MariaDB</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Database for MariaDB</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>f27506c6-b153-40af-880f-40b27125514d</Id>
+          <Version>3cb7d11e-3649-48b8-8200-0d6546f9e652</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Database for MariaDB</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MariaDBAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureMariaDBAdapter</BindingClass>
+          <AdapterName>Azure Database for MariaDB</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Marketo</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>9a839a01-dc46-4c86-b462-d0380e899bae</Id>
+          <Version>fc260467-8616-47ed-8bb1-0962a984ef03</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Marketo</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MarketoAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MarketoAdapter</BindingClass>
+          <AdapterName>Marketo</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>M-Files</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>3a3d0d63-fc95-4f37-b04b-bd2d37c5e643</Id>
+          <Version>ee9dac48-fe08-45e3-8c84-f295d989f1bc</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>M-Files</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MFilesAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MFilesAdapter</BindingClass>
+          <AdapterName>M-Files</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Cosmos DB for MongoDB</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>424d536c-df17-4373-b347-25c5dc3d2ea8</Id>
+          <Version>cff0c19c-6a3c-400b-9365-e2e523d63f2d</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Cosmos DB for MongoDB</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MongoDBAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureCosmosForMongoDBAdapter</BindingClass>
+          <AdapterName>Azure Cosmos DB for MongoDB</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MongoDB</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>ca4a3465-9961-414a-9cd0-b199e961679a</Id>
+          <Version>3a2a5b7c-d088-4be2-8e02-a5e9ec097ccb</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>MongoDB</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MongoDBAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MongoDBAdapter</BindingClass>
+          <AdapterName>MongoDB</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MongoDB Atlas</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>d37d2d48-61ef-4f18-8eb8-8034c83cb6c3</Id>
+          <Version>97459f5b-1fca-4f5b-af47-5c9fed212726</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>MongoDB Atlas</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MongoDBAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MongoDBAtlasAdapter</BindingClass>
+          <AdapterName>MongoDB Atlas</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MQTT</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>aff60042-f24f-4e2d-aa0c-ce0037fac914</Id>
+          <Version>ed202d9f-175c-47e8-af28-b0ef2465636c</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>MQTT</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MqttAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MqttAdapter</BindingClass>
+          <AdapterName>MQTT</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Access</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>5282b78c-5f4e-48b1-9199-945af383412f</Id>
+          <Version>847a3944-4ca1-4066-b5cb-3b657b43d0b4</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Access</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MSAccessAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MSAccessAdapter</BindingClass>
+          <AdapterName>Microsoft Access</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft Exchange</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>fb50aaef-79fb-4345-abe6-9f37034b7c2a</Id>
+          <Version>7322263e-0d6d-4d2f-9da8-f3eab4bd46cd</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft Exchange</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MsExchangeAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.MsExchange.Adapters.ExchangeAdapter</BindingClass>
+          <AdapterName>Microsoft Exchange</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft MSMQ</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>120a5938-1a77-4daf-ad54-8264c0539e8d</Id>
+          <Version>1e199b33-8411-4c79-8c62-b79ad2fd1e78</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft MSMQ</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MsmqAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MsmqAdapter</BindingClass>
+          <AdapterName>Microsoft MSMQ</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon RDS for SQL Server</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>76461fe8-8f37-4ed5-a7d5-e5fd3e998d00</Id>
+          <Version>e1f72b02-259f-4893-87a1-8c95efa4eed2</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon RDS for SQL Server</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MSSQLAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AmazonRDSForMSSQLAdapter</BindingClass>
+          <AdapterName>Amazon RDS for SQL Server</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft SQL Server</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>3da28c9f-2857-40cb-a7c2-8551e420250e</Id>
+          <Version>cc8c5439-5b54-4f6d-baf7-53c584c8b142</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft SQL Server</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MSSQLAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MSSQLAdapter</BindingClass>
+          <AdapterName>Microsoft SQL Server</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure SQL Database</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>1cfd144d-98be-4b01-af2b-27603fa47725</Id>
+          <Version>d872ed71-4381-4912-92a3-604389ca886c</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure SQL Database</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MSSQLAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureMSSQLAdapter</BindingClass>
+          <AdapterName>Azure SQL Database</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon RDS for MySQL</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>ae4c9ee7-54ce-4f7f-8d9f-2e29145ffaf9</Id>
+          <Version>ad55afe3-53fb-4f2a-b15a-fff5cfb3a40f</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon RDS for MySQL</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MySQLAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AmazonRDSForMySQLAdapter</BindingClass>
+          <AdapterName>Amazon RDS for MySQL</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MySQL</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>1a054fa6-2064-465e-a27a-df629fa766fd</Id>
+          <Version>2b500242-7449-4cec-9648-3618b1ac2691</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>MySQL</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MySQLAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.MySQLAdapter</BindingClass>
+          <AdapterName>MySQL</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Database for MySQL</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>abcd2e19-6864-44b2-954b-992b97c927fc</Id>
+          <Version>c0d166aa-1610-4aa7-8e44-e2e5dc9dae12</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Database for MySQL</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.MySQLAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureMySQLAdapter</BindingClass>
+          <AdapterName>Azure Database for MySQL</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NetSuite</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>84127f46-7503-4bc6-ae1c-ee4f0a61d5ab</Id>
+          <Version>d0f6f243-7ac9-40aa-a219-c0e1a6638409</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>NetSuite</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.NetSuiteAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.NetSuiteAdapter</BindingClass>
+          <AdapterName>NetSuite</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NetSuite Rest</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>aeffb7a9-eb20-4335-8f05-d4e69a7020ee</Id>
+          <Version>feaca27a-9670-4c00-a170-87e79c84b728</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>NetSuite Rest</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.NetSuiteRestAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.NetSuiteRestAdapter</BindingClass>
+          <AdapterName>NetSuite Rest</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ODBC</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>731d1656-7138-433a-b6f7-ff53e8739da7</Id>
+          <Version>10250246-358f-4915-aaf3-449dd0cc0ed2</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>ODBC</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.OdbcAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.OdbcAdapter</BindingClass>
+          <AdapterName>ODBC</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft OneDrive</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>08bc4476-fec6-4b08-9d0c-31516fffc82a</Id>
+          <Version>8e68cc35-02a8-4ad5-b67b-cb311466ea38</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft OneDrive</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.OneDriveAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.OneDriveAdapter</BindingClass>
+          <AdapterName>Microsoft OneDrive</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon RDS for Oracle</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>c87b57f0-41b3-4dd1-9d68-439769d30a31</Id>
+          <Version>59c40205-bdeb-466b-9bb9-b73c440eca65</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon RDS for Oracle</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.OracleAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AmazonRDSOracleAdapter</BindingClass>
+          <AdapterName>Amazon RDS for Oracle</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Oracle</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>29a1d5fd-2a09-4fb0-9f71-4593a60070e1</Id>
+          <Version>0b6b910b-17e9-41b7-909a-597a072717f9</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Oracle</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.OracleAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.OracleAdapter</BindingClass>
+          <AdapterName>Oracle</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>POP3</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>5d7f0733-6b13-41e7-b435-8a3728bd81ed</Id>
+          <Version>2034ec86-15de-46b0-8f5e-53b1b771ddc4</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>POP3</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.POP3Adapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.POP3.Adapters.POP3Adapter</BindingClass>
+          <AdapterName>POP3</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Amazon RDS for PostgreSQL</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>5a8bc1c1-49df-42a6-9e72-5989fdc8ac0c</Id>
+          <Version>f383b707-511d-452b-a6f9-271523b4daa1</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Amazon RDS for PostgreSQL</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.PostgreSqlAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AmazonRDSForPostgreSqlAdapter</BindingClass>
+          <AdapterName>Amazon RDS for PostgreSQL</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>PostgreSQL</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>121cbf7b-5b67-4638-9940-ba133e823543</Id>
+          <Version>a19ed4bf-6646-4391-8e70-c7b68deb82ca</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>PostgreSQL</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.PostgreSqlAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.PostgreSqlAdapter</BindingClass>
+          <AdapterName>PostgreSQL</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Cosmos DB for PostgreSQL</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>390788f3-ac59-4313-bfac-e059e8bb89f3</Id>
+          <Version>fadd2601-b93e-48b3-9c0c-86aae0370beb</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Cosmos DB for PostgreSQL</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.PostgreSqlAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzureCosmosForPostgreSQLAdapter</BindingClass>
+          <AdapterName>Azure Cosmos DB for PostgreSQL</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Azure Database for PostgreSQL</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>b4d13d00-9375-4492-a24a-53d958fbef18</Id>
+          <Version>5d71904c-34ba-421a-8c23-bb07804e6a2c</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Azure Database for PostgreSQL</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.PostgreSqlAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.AzurePostgreSqlAdapter</BindingClass>
+          <AdapterName>Azure Database for PostgreSQL</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>RabbitMQ</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>d431ec2e-3102-4e55-a208-37975ae99ba2</Id>
+          <Version>2cc040e6-9311-426a-876d-843653f9b5c7</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>RabbitMQ</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.RabbitMQAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.RabbitMQAdapter</BindingClass>
+          <AdapterName>RabbitMQ</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Redis</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>b81b647a-5ce1-471e-aaaf-ba3a28f4c327</Id>
+          <Version>d6565241-0429-4a34-8670-497dafc5c2b6</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Redis</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.RedisAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.RedisAdapter</BindingClass>
+          <AdapterName>Redis</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Refinitiv Web Socket</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>a046ca41-178a-4e0a-963a-58e624ba3026</Id>
+          <Version>a62ffba9-90a1-43ad-a0c9-d46fbb386c34</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Refinitiv Web Socket</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.RefinitivWebSocketsAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.RefinitivWebSocketAdapter</BindingClass>
+          <AdapterName>Refinitiv Web Socket</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Rest</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>39d73e63-9bcf-4a5a-8926-30b5e7c79b85</Id>
+          <Version>082a3a4a-af8c-4a56-a696-76ed56bca9f1</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Rest</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.RestAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.RestAdapter</BindingClass>
+          <AdapterName>Rest</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Salesforce</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>11bac0e9-216d-4f2b-9c8b-6f24bc16c9ff</Id>
+          <Version>8ba45465-0d6e-468a-8450-d106878c94d9</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Salesforce</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.SalesForceAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.SalesForceAdapter</BindingClass>
+          <AdapterName>Salesforce</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Salesforce Rest</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>c8cb4a08-dc96-4003-b186-17e57f2ed037</Id>
+          <Version>afc7189d-0cef-4c31-9012-17ba5c4058cf</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Salesforce Rest</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.SalesforceRestAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.SalesforceRestAdapter</BindingClass>
+          <AdapterName>Salesforce Rest</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>SAP</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>7592b71c-a7ac-4dd3-b311-5750a9b90212</Id>
+          <Version>54d676cf-939b-4005-a0b8-fdf9eebda2f6</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>SAP</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.SAPAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.SAPAdapter</BindingClass>
+          <AdapterName>SAP</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ServiceNow</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>0bfaf7d6-c7d4-4022-9234-09c1d0a1b099</Id>
+          <Version>edcfbc67-5d57-4f75-aa6e-9269669d8e64</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>ServiceNow</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.ServiceNowAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.ServiceNowAdapter</BindingClass>
+          <AdapterName>ServiceNow</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>SFTP</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>4966fdf2-a120-4e55-ba66-a99c8d1c64ba</Id>
+          <Version>8d0b774f-80c5-4840-8687-514f78fc12b4</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>SFTP</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.SFtpAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.SFtpAdapter</BindingClass>
+          <AdapterName>SFTP</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft SharePoint</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>27745729-bf3e-45ff-be1d-60089c14e4be</Id>
+          <Version>b0c45909-e9d7-4093-b21d-242d1ee54ba3</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft SharePoint</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.SharePoint.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.SharePoint.Adapter</BindingClass>
+          <AdapterName>Microsoft SharePoint</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>SMTP</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>9e02933e-50dd-41ca-a197-c81bad5b1c4a</Id>
+          <Version>8cbf3a2d-66d8-4b05-b90c-c96c5e5da207</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>SMTP</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.SmtpAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.SmtpAdapter</BindingClass>
+          <AdapterName>SMTP</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Client TCP Socket</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>91a87121-4347-4f2f-a2ed-586b4005467a</Id>
+          <Version>b7955205-4f19-4fb4-84a2-8a8e532a329e</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Client TCP Socket</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.Socket.dll</BindingAssembly>
+          <BindingClass>NeuronEsb.Adapters.Socket.ClientSocketAdapter</BindingClass>
+          <AdapterName>Client TCP Socket</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Server TCP Socket</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>f4d45ba6-f38b-4a2e-bbdd-5ba21ea7f56e</Id>
+          <Version>2e520776-a262-44bd-b40e-5da7f6632a16</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Server TCP Socket</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.Socket.dll</BindingAssembly>
+          <BindingClass>NeuronEsb.Adapters.Socket.ServerSocketAdapter</BindingClass>
+          <AdapterName>Server TCP Socket</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Microsoft SQL Service Broker</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>8885c3a2-4a00-47df-b00d-5787a508b662</Id>
+          <Version>c55f71b5-a1b8-4e1e-a18e-11df028e073c</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Microsoft SQL Service Broker</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.SqlServiceBrokerAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.SqlServiceBrokerAdapter</BindingClass>
+          <AdapterName>Microsoft SQL Service Broker</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Twilio</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>9314e565-aca6-465f-bf4b-e2456151c7e5</Id>
+          <Version>340e7221-6a8e-400f-bd73-674d999da681</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Twilio</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.TwilioAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.TwilioAdapter</BindingClass>
+          <AdapterName>Twilio</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IBM MQ</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>e0ea2022-6399-48ee-a64a-c92ea9856ebd</Id>
+          <Version>7d695c72-c92b-4480-9afa-5e8c6a69472d</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>IBM MQ</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.WebSphereMQ.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.WebSphereMQ.Adapter</BindingClass>
+          <AdapterName>IBM MQ</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Zuora</string>
+      </key>
+      <value>
+        <ESBAdapter>
+          <Id>827f6f91-b52d-4b01-b2fc-cfd3abf0808b</Id>
+          <Version>181de039-b701-4095-bb98-b4b342b30374</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description />
+          <Name>Zuora</Name>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AdapterType>Net</AdapterType>
+          <Zone>Enterprise</Zone>
+          <BindingAssembly>Neuron.Esb.Adapters.ZuoraAdapter.dll</BindingAssembly>
+          <BindingClass>Neuron.Esb.Adapters.ZuoraAdapter</BindingClass>
+          <AdapterName>Zuora</AdapterName>
+        </ESBAdapter>
+      </value>
+    </item>
+  </Adapters>
+  <Credentials />
+  <ServicePolicies>
+    <item>
+      <key>
+        <string>Default</string>
+      </key>
+      <value>
+        <ESBServicePolicy>
+          <Id>2bcec643-b6f7-4b39-bc23-77c71fadbcd0</Id>
+          <Version>ed5171ee-e487-4e85-bf89-affeea05ebaf</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description>Default service policy</Description>
+          <Name>Default</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
+          <OnErrorAuditToFile>false</OnErrorAuditToFile>
+          <OnErrorRepublishMessage>false</OnErrorRepublishMessage>
+          <RepublishTopic />
+          <OnErrorRollback>false</OnErrorRollback>
+          <AlwaysAvailable>true</AlwaysAvailable>
+          <RequestReplyTimeout>60</RequestReplyTimeout>
+          <DoNotApplyPolicyIfFaultContract>false</DoNotApplyPolicyIfFaultContract>
+          <RetryCount>1</RetryCount>
+          <RetryInterval>1</RetryInterval>
+          <RollbackDelaySeconds>60</RollbackDelaySeconds>
+          <RollbackMessageExpirationSeconds>300</RollbackMessageExpirationSeconds>
+          <InlcudeAsExceptions>false</InlcudeAsExceptions>
+          <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
+          <HttpStatusCodes />
+          <CustomHttpStatusCodes />
+        </ESBServicePolicy>
+      </value>
+    </item>
+  </ServicePolicies>
+  <AdapterPolicies>
+    <item>
+      <key>
+        <string>Default</string>
+      </key>
+      <value>
+        <ESBAdapterPolicy>
+          <Id>ec1b5dc7-82d3-47ac-bb69-368c26d69d2a</Id>
+          <Version>90b45e5f-9161-47e9-8024-f486687f1451</Version>
+          <BusinessFlows />
+          <ProcessFlows />
+          <Description>Default adapter policy</Description>
+          <Name>Default</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <RetryCount>1</RetryCount>
+          <RetryInterval>1</RetryInterval>
+          <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
+          <OnErrorAuditToFile>true</OnErrorAuditToFile>
+          <OnErrorRepublishMessage>false</OnErrorRepublishMessage>
+          <OnErrorRollback>false</OnErrorRollback>
+          <RepublishTopic />
+          <AlwaysAvailable>true</AlwaysAvailable>
+          <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
+          <RollbackMessageExpirationSeconds>300</RollbackMessageExpirationSeconds>
+          <RollbackDelaySeconds>60</RollbackDelaySeconds>
+        </ESBAdapterPolicy>
+      </value>
+    </item>
+  </AdapterPolicies>
+  <Endpoints />
+  <AccessControlLists />
+  <Administrators>
+    <item>
+      <key>
+        <string>Administrators</string>
+      </key>
+      <value>
+        <ESBAccessControlList>
+          <BusinessFlows />
+          <ProcessFlows />
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AccessCheckType>Unknown</AccessCheckType>
+          <EncryptedData>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</EncryptedData>
+        </ESBAccessControlList>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Everyone</string>
+      </key>
+      <value>
+        <ESBAccessControlList>
+          <BusinessFlows />
+          <ProcessFlows />
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AccessCheckType>Unknown</AccessCheckType>
+          <EncryptedData>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</EncryptedData>
+        </ESBAccessControlList>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Users</string>
+      </key>
+      <value>
+        <ESBAccessControlList>
+          <BusinessFlows />
+          <ProcessFlows />
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <AccessCheckType>Unknown</AccessCheckType>
+          <EncryptedData>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</EncryptedData>
+        </ESBAccessControlList>
+      </value>
+    </item>
+  </Administrators>
+  <IsEncrypted>false</IsEncrypted>
+</ESBConfiguration>
